@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="cr.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left side: Image -->
+    <div class="image-container">
+      <!-- Change this to a relative or public image path -->
+      <img src="C:\Users\user-45\Downloads\cr.jpg" alt="Your Image" height="100%" width="60%">
+    </div>
+
+    <!-- Right side: Registration Form -->
+    <div class="form-container">
+      <h2>Hello, welcome!</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e11c939c-50e0-436e-ae4a-8ebcd70585c3">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        </div>
+        
+        <div>
+          <label>Vote Option:</label>
+          <input type="radio" name="choice" value="Ansh" id="ansh" required>
+          <label class="radio-label" for="ansh">Ansh</label>
+
+          <input type="radio" name="choice" value="Other" id="other" required>
+          <label class="radio-label" for="other">Other</label>
+        </div> <br>
+
+        <div class="input-group">
+          <label for="textarea">Your Response</label> <br>
+          <textarea id="textarea" name="textarea" placeholder="Enter your response" required></textarea>
+        </div>
+
+        <div class="button-group">
+          <button type="submit">Submit Your Response</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
